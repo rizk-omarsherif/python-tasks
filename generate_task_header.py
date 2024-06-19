@@ -10,8 +10,6 @@ Task Description: {task_description}
 Author: {author}
 Course: {course}
 Diploma: {diploma}
-
-Date: {date}
 \"\"\"
 """
     return header
