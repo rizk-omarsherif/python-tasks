@@ -1,11 +1,11 @@
-
 """
-Task Number: 3
-Task Description: Write a Python program to access environment variables.
+Task Number      : 3
+Task Description : Write a Python program to access environment variables.
+Task Objective   : This task demonstrates how to interact with the system environment using Python's os module.
 
-Author: Omar Rizk
-Course: Python Programming
-Diploma: Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
+Author  : Omar Rizk
+Course  : Python Programming
+Diploma : Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
 """
 
 import os
