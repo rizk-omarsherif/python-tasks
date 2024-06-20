@@ -15,11 +15,9 @@ def get_task_info(file_name):
     with open(file_name, "r") as file:
         lines = file.readlines()
         task_number = lines[1].strip().split(": ")[-1]          # Extract task number
-
         task_description = lines[2].strip().split(": ")[-1]     # Extract task description
-
-        task_objective   = lines[3].strip().split(": ")[-1]     # Extract task description
-
+        task_objective   = lines[3].strip().split(": ")[-1]     # Extract task objective
+        
         return task_number, task_description, task_objective
 
 # Generate the updated README.md content
