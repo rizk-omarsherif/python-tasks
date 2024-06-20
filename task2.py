@@ -1,11 +1,11 @@
-
 """
-Task Number: 2
-Task Description: Write a Python program to test whether a passed letter is a vowel or not.
+Task Number      : 2
+Task Description : Write a Python program to test whether a passed letter is a vowel or not.
+Task Objective   : This task is useful for practicing conditional statements and understanding string operations.
 
-Author: Omar Rizk
-Course: Python Programming
-Diploma: Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
+Author  : Omar Rizk
+Course  : Python Programming
+Diploma : Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
 """
 
 def is_vowel(letter):
