@@ -24,11 +24,11 @@ Below is a list of tasks included in this repository, along with brief descripti
 3. **[Task 3: Write a Python program to access and print environment variables.](task3.py)**
    - Objective: This task demonstrates how to interact with the system environment using Python's os module.
 
-4. **[Task 4: Write a Python program which accepts the radius of a circle from the user and compute the area.](task4.py)**
-   - Description: This task demonstrates how to perform simple mathematical calculations.
+4. **[Task 4: Write a Python program that accept radius of a circle from the user and compute the area.](task4.py)**
+   - Objective: This task demonstrates how to perform simple mathematical calculations.
 
 5. **[Task 5: Write a Python program to print the calendar of a given month and year.](task5.py)**
-   - Description: This task demonstrates how to use Python's calendar module.
+   - Objective: This task demonstrates how to use Python's calendar module.
 
 ## Installation
 To run the tasks, you'll need to have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
