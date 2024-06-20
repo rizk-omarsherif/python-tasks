@@ -1,11 +1,11 @@
-
 """
-Task Number: 1
-Task Description: Write a Python program to count the number 4 in a given list.
+Task Number      : 1
+Task Description : Write a Python program to count the number 4 in a given list.
+Task Objective   : This task focuses on list iteration and basic counting operations.
 
-Author: Omar Rizk
-Course: Python Programming
-Diploma: Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
+Author  : Omar Rizk
+Course  : Python Programming
+Diploma : Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
 """
 
 def is_numeric(x):
