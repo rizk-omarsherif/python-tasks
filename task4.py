@@ -1,11 +1,11 @@
-
 """
-Task Number: 4
-Task Description: Write a Python program which accepts the radius of a circle from the user and compute the area.
+Task Number      : 4
+Task Description : Write a Python program which accepts the radius of a circle from the user and compute the area.
+Task Objective   : This task demonstrates how to perform simple mathematical calculations.
 
-Author: Omar Rizk
-Course: Python Programming
-Diploma: Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
+Author  : Omar Rizk
+Course  : Python Programming
+Diploma : Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
 """
 
 import math
