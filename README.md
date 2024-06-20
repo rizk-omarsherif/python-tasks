@@ -21,10 +21,10 @@ Below is a list of tasks included in this repository, along with brief descripti
 2. **[Task 2: Write a Python program to test whether a passed letter is a vowel or not.](task2.py)**
    - Objective: This task is useful for practicing conditional statements and understanding string operations.
 
-3. **[Task 3: Write a Python program to access and print environment variables.](task3.py)**
+3. **[Task 3: Write a Python program to access environment variables.](task3.py)**
    - Objective: This task demonstrates how to interact with the system environment using Python's os module.
 
-4. **[Task 4: Write a Python program that accept radius of a circle from the user and compute the area.](task4.py)**
+4. **[Task 4: Write a Python program which accepts the radius of a circle from the user and compute the area.](task4.py)**
    - Objective: This task demonstrates how to perform simple mathematical calculations.
 
 5. **[Task 5: Write a Python program to print the calendar of a given month and year.](task5.py)**
@@ -44,14 +44,12 @@ cd python-tasks
 ```
 
 ## Usage
-
 Each task is contained in its own file. To run a task, execute the corresponding Python file. For example:
 ```
 python task1.py
 ```
 
 ## Contributing
-
 If you would like to contribute, please fork the repo, create a new branch, and submit a pull request. Contributions are welcome!
 
 We are all learning, so don't hesitate to submit your changes or improvements. Your contributions help make this repository better for everyone.
