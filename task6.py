@@ -1,6 +1,6 @@
 """
 Task Number      : 6
-Task Description : Write a Python program to count the number of lines in a file
+Task Description : Write a Python program to count the number of lines in a text file
 Task Objective   : This task is an exercise on how to deal with files in Python.
 
 Author  : Omar Rizk
