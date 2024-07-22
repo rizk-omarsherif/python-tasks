@@ -1,0 +1,20 @@
+- **Arithmetic Operations:**
+  - Addition: `a + b`
+  - Subtraction: `a - b`
+  - Multiplication: `a * b`
+  - Division (returns float): `a / b`
+  - Floor Division (returns int): `a // b`
+  - Modulus: `a % b`
+  - Exponentiation: `a ** b`
+<p></p>
+
+- **Built-in Functions:**
+  - `abs(x)`: Returns the absolute value of the integer.
+    ```python
+    num = -42
+    print(abs(num))  # Output: 42
+    ```
+  - `int(x, base=10)`: Converts a number or string to an integer. If the argument is a string, it can convert from the given base.
+    ```python
+    num_str = "1010"
+    print(int(num_str, base=2))  # Output: 10
