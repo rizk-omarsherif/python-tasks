@@ -30,7 +30,7 @@ Below is a list of tasks included in this repository, along with brief descripti
 5. **[Task 5: Write a Python program to print the calendar of a given month and year.](task5.py)**
    - Objective: This task demonstrates how to use Python's calendar module.
 
-6. **[Task 6: Write a Python program to count the number of lines in a file](task6.py)**
+6. **[Task 6: Write a Python program to count the number of lines in a text file](task6.py)**
    - Objective: This task is an exercise on how to deal with files in Python.
 
 ## Installation
