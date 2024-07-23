@@ -33,6 +33,9 @@ Below is a list of tasks included in this repository, along with brief descripti
 6. **[Task 6: Write a Python program to count the number of lines in a text file](task6.py)**
    - Objective: This task is an exercise on how to deal with files in Python.
 
+7. **[Task 7: Write a Python program to count the number of words in a file](task7.py)**
+   - Objective: This task is an exercise on how to deal with files in Python
+
 ## Installation
 To run the tasks, you'll need to have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
 
