@@ -6,7 +6,7 @@ def generate_task_list():
     # Traverse all files in the current directory
     for file_name in sorted(os.listdir()):
         if file_name.startswith("task") and file_name.endswith(".py"):
-            task_number, task_description, task_objective = get_task_info(file_name)        # Get task number and description from file
+            task_number, task_description, task_objective = get_task_info(file_name)  # Get task number and description from file
             task_list.append((task_number, task_description, task_objective))
     return task_list
 
@@ -22,7 +22,11 @@ def get_task_info(file_name):
 
 # Generate the updated README.md content
 def update_readme():
-    with open("README.md", "w") as readme:
+    # Define the path to the parent directory
+    parent_directory = os.path.abspath(os.path.join(os.getcwd(), ".."))
+    readme_path = os.path.join(parent_directory, "README.md")
+    
+    with open(readme_path, "w") as readme:
         readme.write("# python-tasks\n\n")
         readme.write("#### A collection of Python programming tasks and exercises completed as part of the Embedded Linux Diploma under the supervision of [Eng. Moatasem Elsayed](https://www.linkedin.com/in/moatasem-el-sayed/)\n\n")
         readme.write("## Table of Contents\n")
