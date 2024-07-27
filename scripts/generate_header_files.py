@@ -1,3 +1,5 @@
+import os
+
 def create_header(task_number, task_description, task_objective, author, course, diploma):
     header = f"""\"\"\"
 Task Number      : {task_number}
@@ -21,11 +23,19 @@ def main():
 
     header = create_header(task_number, task_description, task_objective, author, course, diploma)
     
+    # Specify the directory path
+    directory_path = os.path.join("..", "tasks")
+    
+    # Create the directory if it doesn't exist
+    os.makedirs(directory_path, exist_ok=True)
+    
     file_name = f"task{task_number}.py"
-    with open(file_name, "w") as file:
+    file_path = os.path.join(directory_path, file_name)
+    
+    with open(file_path, "w") as file:
         file.write(header)
 
-    print(f"{file_name} has been created with the header.")
+    print(f"{file_name} has been created in the 'tasks' directory with the header.")
 
 if __name__ == "__main__":
     main()
