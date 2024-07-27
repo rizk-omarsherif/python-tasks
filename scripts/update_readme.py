@@ -3,16 +3,21 @@ import os
 # Function to generate the Task List section content
 def generate_task_list():
     task_list = []
-    # Traverse all files in the current directory
-    for file_name in sorted(os.listdir()):
+    # Path to the 'tasks' directory
+    tasks_directory = os.path.join(os.path.dirname(__file__), "..", "tasks")
+    tasks_directory = os.path.abspath(tasks_directory)
+    
+    # Traverse all files in the 'tasks' directory
+    for file_name in sorted(os.listdir(tasks_directory)):
         if file_name.startswith("task") and file_name.endswith(".py"):
-            task_number, task_description, task_objective = get_task_info(file_name)  # Get task number and description from file
+            file_path = os.path.join(tasks_directory, file_name)
+            task_number, task_description, task_objective = get_task_info(file_path)  # Get task number and description from file
             task_list.append((task_number, task_description, task_objective))
     return task_list
 
 # Function to read the first two lines of the Python file to get task number and description
-def get_task_info(file_name):
-    with open(file_name, "r") as file:
+def get_task_info(file_path):
+    with open(file_path, "r") as file:
         lines = file.readlines()
         task_number = lines[1].strip().split(": ")[-1]          # Extract task number
         task_description = lines[2].strip().split(": ")[-1]     # Extract task description
@@ -22,8 +27,8 @@ def get_task_info(file_name):
 
 # Generate the updated README.md content
 def update_readme():
-    # Define the path to the parent directory
-    parent_directory = os.path.abspath(os.path.join(os.getcwd(), ".."))
+    # Define the path to the README file in the parent directory
+    parent_directory = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
     readme_path = os.path.join(parent_directory, "README.md")
     
     with open(readme_path, "w") as readme:
@@ -45,7 +50,7 @@ def update_readme():
         # Generate task list
         tasks = generate_task_list()
         for task_number, task_description, task_objective in tasks:
-            readme.write(f"{task_number}. **[Task {task_number}: {task_description}](task{task_number}.py)**\n")
+            readme.write(f"{task_number}. **[Task {task_number}: {task_description}](tasks/task{task_number}.py)**\n")
             readme.write(f"   - Objective: {task_objective}\n\n")  # Add objective
         
         readme.write("## Installation\n")
@@ -62,9 +67,9 @@ def update_readme():
         readme.write("```\n\n")
         
         readme.write("## Usage\n")
-        readme.write("Each task is contained in its own file. To run a task, execute the corresponding Python file. For example:\n")
+        readme.write("Each task is contained in its own file within the `tasks` directory. To run a task, execute the corresponding Python file. For example:\n")
         readme.write("```\n")
-        readme.write("python task1.py\n")
+        readme.write("python tasks/task1.py\n")
         readme.write("```\n\n")
         
         readme.write("## Contributing\n")
