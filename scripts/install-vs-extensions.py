@@ -1,7 +1,6 @@
 """
 Script Name         : install-vs-extensions.py
-Script Description  : Automatically install VS Code extensions using PyAutoGUI and PySide6
-Script Objective    : This script uses `PyAutoGUI` to automate the installation of VS Code extensions
+Script Description  : Automates the installation of VS Code extensions using PyAutoGUI, with an added PySide6 GUI for enhanced user-friendliness.
 
 Author  : Omar Rizk
 Course  : Python Programming

@@ -1,3 +1,12 @@
+"""
+Script Name         : generate_header_files.py
+Script Description  : Creates new task files with a predefined header, prompting the user for task details to ensure consistency across the repository.
+
+Author  : Omar Rizk
+Course  : Python Programming
+Diploma : Embedded Linux Diploma (Under Supervision of Eng. Moatasem Elsayed)
+"""
+
 import os
 
 def create_header(task_number, task_description, task_objective, author, course, diploma):
