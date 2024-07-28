@@ -22,7 +22,7 @@ Below is a list of tasks included in this repository, along with brief descripti
    - Objective: This task is useful for practicing conditional statements and understanding string operations.
 
 3. **[Task 3: Write a Python program to access environment variables.](tasks/task3.py)**
-   - Objective: This task demonstrates how to interact with the system environment using Python's os module.
+   - Objective: This task demonstrates how to interact with the system environment using Python's `os` module.
 
 4. **[Task 4: Write a Python program which accepts the radius of a circle from the user and compute the area.](tasks/task4.py)**
    - Objective: This task demonstrates how to perform simple mathematical calculations.
@@ -38,6 +38,9 @@ Below is a list of tasks included in this repository, along with brief descripti
 
 8. **[Task 8: Write a Python script to fetch Bitcoin rates from an API and save the data to a CSV file.](tasks/task8.py)**
    - Objective: This task is an exercise in using the `requests` module to interact with web APIs and `pandas` to handle and store data in a tabular format.
+
+9. **[Task 9: Use PyAutoGUI to install VS Code C++ extensions](tasks/task9.py)**
+   - Objective: This task is an exercise in using `PyAutoGUI` to automate simple tasks
 
 ## Installation
 To run the tasks, you'll need to have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
