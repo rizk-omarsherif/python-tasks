@@ -5,9 +5,11 @@
 ## Table of Contents
 1. [Introduction](#introduction)
 2. [Task List](#task-list)
-3. [Installation](#installation)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
+3. [Scripts](#scripts)
+4. [Py-Study-Notebooks](#py-study-notebooks)
+5. [Installation](#installation)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
 
 ## Introduction
 This repository contains a series of Python programming tasks and exercises that I completed as part of the Embedded Linux Diploma. Each task is designed to improve programming skills and understanding of Python.
@@ -42,8 +44,63 @@ Below is a list of tasks included in this repository, along with brief descripti
 9. **[Task 9: Use PyAutoGUI to install VS Code C++ extensions](tasks/task9.py)**
    - Objective: This task is an exercise in using `PyAutoGUI` to automate simple tasks
 
+## Scripts
+Below is a list of scripts included in this repository, along with brief descriptions:
+
+**[Script: generate_header_files.py](scripts/generate_header_files.py)**
+   - Description: Creates new task files with a predefined header, prompting the user for task details to ensure consistency across the repository.
+
+**[Script: install-vs-extensions.py](scripts/install-vs-extensions.py)**
+   - Description: Automates the installation of VS Code extensions using PyAutoGUI, with an added PySide6 GUI for enhanced user-friendliness.
+
+**[Script: update_readme.py](scripts/update_readme.py)**
+   - Description: Generates and updates the README file for python-tasks repository by collecting tasks, scripts, and study notebooks information from Python files and Jupyter notebooks.
+
+## Py-Study-Notebooks
+Below is a list of study notebooks included in this repository, along with brief descriptions:
+
+**Study Folder: 00_introduction-to-python**
+   - [Notebook: 00_introduction-to-python.ipynb](py-study-notebooks/00_introduction-to-python/00_introduction-to-python.ipynb)
+
+**Study Folder: 01_data-types**
+   - [Notebook: 00_intro-to-python-data-types.ipynb](py-study-notebooks/01_data-types/00_intro-to-python-data-types.ipynb)
+   - [Notebook: 01_numeric-types.ipynb](py-study-notebooks/01_data-types/01_numeric-types.ipynb)
+   - [Notebook: 02_strings.ipynb](py-study-notebooks/01_data-types/02_strings.ipynb)
+   - [Notebook: 03_lists.ipynb](py-study-notebooks/01_data-types/03_lists.ipynb)
+   - [Notebook: 04_tuples.ipynb](py-study-notebooks/01_data-types/04_tuples.ipynb)
+   - [Notebook: 05_dictionaries.ipynb](py-study-notebooks/01_data-types/05_dictionaries.ipynb)
+   - [Notebook: 06_sets.ipynb](py-study-notebooks/01_data-types/06_sets.ipynb)
+   - [Notebook: 07_containers-comparison.ipynb](py-study-notebooks/01_data-types/07_containers-comparison.ipynb)
+
+**Study Folder: 02_operators**
+   - [Notebook: 01_arithmetic-operators.ipynb](py-study-notebooks/02_operators/01_arithmetic-operators.ipynb)
+   - [Notebook: 02_bitwise-operators.ipynb](py-study-notebooks/02_operators/02_bitwise-operators.ipynb)
+   - [Notebook: 03_assignment-operators.ipynb](py-study-notebooks/02_operators/03_assignment-operators.ipynb)
+   - [Notebook: 04_relational-operators.ipynb](py-study-notebooks/02_operators/04_relational-operators.ipynb)
+   - [Notebook: 05_logical-operators.ipynb](py-study-notebooks/02_operators/05_logical-operators.ipynb)
+   - [Notebook: 06_membership-and-identity-operators.ipynb](py-study-notebooks/02_operators/06_membership-and-identity-operators.ipynb)
+
+**Study Folder: 03_control-flow**
+   - [Notebook: 01_conditional-statement.ipynb](py-study-notebooks/03_control-flow/01_conditional-statement.ipynb)
+   - [Notebook: 02_loops.ipynb](py-study-notebooks/03_control-flow/02_loops.ipynb)
+
+**Study Folder: 04_functions**
+   - [Notebook: 01_functions.ipynb](py-study-notebooks/04_functions/01_functions.ipynb)
+
+**Study Folder: 05_oop-in-python**
+   - [Notebook: 01_Introduction-to-oop.ipynb](py-study-notebooks/05_oop-in-python/01_Introduction-to-oop.ipynb)
+   - [Notebook: 02_encapsulation-inheritance.ipynb](py-study-notebooks/05_oop-in-python/02_encapsulation-inheritance.ipynb)
+   - [Notebook: 03_advanced-oop-concepts.ipynb](py-study-notebooks/05_oop-in-python/03_advanced-oop-concepts.ipynb)
+
+**Study Folder: 06_threading**
+   - [Notebook: Untitled.ipynb](py-study-notebooks/06_threading/Untitled.ipynb)
+
+**Study Folder: 07_sockets**
+
+**Study Folder: 08_gui-tkinter**
+
 ## Installation
-To run the tasks, you'll need to have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
+To run the tasks and scripts, you'll need to have Python installed on your machine. You can download it from [python.org](https://www.python.org/).
 
 Clone the repository to your local machine using:
 ```
@@ -56,9 +113,18 @@ cd python-tasks
 ```
 
 ## Usage
-Each task is contained in its own file within the `tasks` directory. To run a task, execute the corresponding Python file. For example:
+Each task, script, and study notebook is contained in its own file within the `tasks`, `scripts`, and `py-study-notebooks` directories respectively. To run a task or script, execute the corresponding Python file. For example:
 ```
 python tasks/task1.py
+```
+or
+```
+python scripts/script1.py
+```
+
+To open a study notebook, navigate to the appropriate folder within `py-study-notebooks` and open the Jupyter notebook file using Jupyter Notebook or JupyterLab. For example:
+```
+jupyter notebook py-study-notebooks/00_introduction-to-python/00_introduction-to-python.ipynb
 ```
 
 ## Contributing
