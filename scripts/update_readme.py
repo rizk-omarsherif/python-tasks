@@ -51,15 +51,6 @@ def get_script_info(file_path):
         
         return script_title, script_description
 
-# Function to update the .gitignore file to include .ipynb_checkpoints
-def update_gitignore():
-    gitignore_path = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".gitignore"))
-    with open(gitignore_path, "a+") as gitignore:
-        gitignore.seek(0)
-        lines = gitignore.readlines()
-        if ".ipynb_checkpoints\n" not in lines:
-            gitignore.write("\n.ipynb_checkpoints\n")
-
 # Generate the updated README.md content
 def update_readme():
     # Define the path to the README file in the parent directory
@@ -143,5 +134,4 @@ def update_readme():
 
 # Main function to update README.md
 if __name__ == "__main__":
-    update_gitignore()
     update_readme()
